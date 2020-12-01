@@ -25,11 +25,15 @@ public class Message {
 
 	}
 
+	public Message(String message) {
+		this.message = message;
+	}
+
 	public Message(String message, String description) {
 		this.message = message;
 		this.description = description;
 	}
-	
+
 	public long getId() {
 		return id;
 	}

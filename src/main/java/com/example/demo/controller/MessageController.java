@@ -32,7 +32,7 @@ public class MessageController {
 	@GetMapping("/messages/{id}")
 	public ResponseEntity<Message> getMessageById(@PathVariable(value = "id") Long messageId) throws Exception {
 		Message message = messageRepository.findById(messageId)
-				.orElseThrow(() -> new Exception("Message not found for this id : " + messageId));
+				.orElseThrow(() -> new Exception("Message not found for this id: " + messageId));
 		return ResponseEntity.ok().body(message);
 	}
 
