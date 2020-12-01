@@ -87,7 +87,6 @@ public class MessageControllerTest {
 
 		RequestBuilder requestBuilder = MockMvcRequestBuilders.post("/api/messages").accept(MediaType.APPLICATION_JSON)
 				.content(inputJson).contentType(MediaType.APPLICATION_JSON);
-		;
 
 		MvcResult result = mockMvc.perform(requestBuilder).andReturn();
 
